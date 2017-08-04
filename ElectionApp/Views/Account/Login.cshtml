@@ -4,10 +4,15 @@
 @{
     ViewBag.Title = "Log in";
 }
+<style>
+    .jumbotron{
+        background-color:ThreeDLightShadow;
+    }
+</style>
 
 <h2>@ViewBag.Title.</h2>
-<div class="row">
-    <div class="col-md-8">
+<div class="jumbotron">
+    <div class="container">
         <section id="loginForm">
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
