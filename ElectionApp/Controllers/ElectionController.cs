@@ -15,7 +15,13 @@ namespace ElectionApp.Controllers
         }
         public ActionResult ballotpage()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Cast Your Vote Here.";
+
+            return View();
+        }
+        public ActionResult tallypage()
+        {
+            ViewBag.Message = "Current Contestant Standings.";
 
             return View();
         }
