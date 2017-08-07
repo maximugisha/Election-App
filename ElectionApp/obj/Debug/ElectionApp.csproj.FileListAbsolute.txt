@@ -17,7 +17,6 @@ C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\MySql.Data.Entity.EF5.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\MySql.Data.Entity.EF6.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\MySql.Fabric.Plugin.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Newtonsoft.Json.dll
@@ -30,7 +29,6 @@ C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Web.WebPages.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Web.WebPages.Razor.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\WebGrease.dll
-C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\MySql.Data.Entity.EF5.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\MySql.Data.Entity.EF6.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Web.Helpers.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Web.Mvc.xml
@@ -55,7 +53,6 @@ C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.csprojResolveAssemblyReference.cache
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.pdb
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\Beebotte.API.Server.Net.dll
@@ -65,3 +62,4 @@ C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Net.Http.Formatting.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Web.Http.xml
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin\System.Web.Http.WebHost.xml
+C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.csprojResolveAssemblyReference.cache
