@@ -3,108 +3,109 @@
     ViewBag.Title = "ballotpage";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@if (Request.IsAuthenticated)
+{
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="http://cdn.socket.io/socket.io-1.1.0.js"></script>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
 
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<link href="Content/bootstrap.css" rel="stylesheet" />
-<script src="Scripts/bootstrap.js"></script>
-<script src="http://cdn.socket.io/socket.io-1.1.0.js"></script>
-<script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-    function vote() {
-        var selected = $("input:radio[name='optionsRadios']:checked").val();
-        if (selected !== undefined) {
-            bbt.write({ channel: 'ElectionApp', resource: 'President' }, parseInt(selected));
+    <script type="text/javascript">
+        function vote() {
+            var selected = $("input:radio[name='optionsRadios']:checked").val();
+            if (selected !== undefined) {
+                bbt.write({ channel: 'ElectionApp', resource: 'President' }, parseInt(selected));
+            }
         }
-    }
-</script>
+    </script>
 
-<h2>My Vote, My Voice</h2>
-
-
-<div class="container">
-    <div class="page-header">
-        <h1>
-            Cast Your Vote <br />
-            <small>Make it Confidential</small>
-
-        </h1>
-    </div>
+    <h2>My Vote, My Voice</h2>
 
 
+    <div class="container">
+        <div class="page-header">
+            <h1>
+                Cast Your Vote <br />
+                <small>Make it Confidential</small>
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-arrow-right"></span>  President
-                    </h3>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <div class="radio">
-                            <label>
-                                <input value="1" type="radio" name="optionsRadios" />
-                                Maximo Mugisha
-                            </label> (<span id="option1Perc">0</span>)
-                        </div>
-                        <div class="progress">
-                            <div id="option1bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                0%
+            </h1>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-arrow-right"></span>  President
+                        </h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input value="1" type="radio" name="optionsRadios" />
+                                    Maximo Mugisha
+                                </label> (<span id="option1Perc">0</span>)
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="radio">
-                            <label>
-                                <input value="2" type="radio" name="optionsRadios" />
-                                Ben Sek
-                            </label> (<span id="option2Perc">0</span>)
-                        </div>
-                        <div class="progress">
-                            <div id="option2bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                0%
+                            <div class="progress">
+                                <div id="option1bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    0%
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="radio">
-                            <label>
-                                <input value="3" type="radio" name="optionsRadios" />
-                                Kamayangi Eliz
-                            </label> (<span id="option3Perc">0</span>)
-                        </div>
-                        <div class="progress">
-                            <div id="option3bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                0%
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input value="2" type="radio" name="optionsRadios" />
+                                    Ben Sek
+                                </label> (<span id="option2Perc">0</span>)
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="radio">
-                            <label>
-                                <input value="4" type="radio" name="optionsRadios" />
-                                Kalamaji John
-                            </label> (<span id="option4Perc">0</span>)
-                        </div>
-                        <div class="progress">
-                            <div id="option4bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                0%
+                            <div class="progress">
+                                <div id="option2bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    0%
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input value="3" type="radio" name="optionsRadios" />
+                                    Kamayangi Eliz
+                                </label> (<span id="option3Perc">0</span>)
+                            </div>
+                            <div class="progress">
+                                <div id="option3bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    0%
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input value="4" type="radio" name="optionsRadios" />
+                                    Kalamaji John
+                                </label> (<span id="option4Perc">0</span>)
+                            </div>
+                            <div class="progress">
+                                <div id="option4bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    0%
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-                <div class="panel-footer">
-                    <button type="button" class="btn btn-primary" onclick="vote()">
-                        Vote
-                    </button>
+                    <div class="panel-footer">
+                        <button type="button" class="btn btn-primary" onclick="vote()">
+                            Vote
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <div class="row">
@@ -177,3 +178,12 @@
             </div>
         </div>
     </div>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
+
