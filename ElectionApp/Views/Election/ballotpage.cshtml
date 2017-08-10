@@ -3,24 +3,8 @@
     ViewBag.Title = "ballotpage";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@if (Request.IsAuthenticated)
-{
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/bootstrap.js"></script>
-    <script src="http://cdn.socket.io/socket.io-1.1.0.js"></script>
-    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-        function vote() {
-            var selected = $("input:radio[name='optionsRadios']:checked").val();
-            if (selected !== undefined) {
-                bbt.write({ channel: 'ElectionApp', resource: 'President' }, parseInt(selected));
-            }
-        }
-    </script>
-
-    <h2>My Vote, My Voice</h2>
+    <h2 class="h1">Your Vote, Your Voice</h2>
 
 
     <div class="container">
@@ -30,9 +14,8 @@
                 <small>Make it Confidential</small>
 
             </h1>
+            
         </div>
-
-
 
         <div class="row">
             <div class="col-md-6">

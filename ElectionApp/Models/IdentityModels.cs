@@ -2,6 +2,11 @@
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System;
+using System.Data.Entity;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace ElectionApp.Models
 {
@@ -19,6 +24,7 @@ namespace ElectionApp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Candidates> Candidates { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
