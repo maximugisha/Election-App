@@ -130,3 +130,6 @@ C:\Users\Izzy Kamayangi\Desktop\Project\Election-App\ElectionApp\obj\Debug\Elect
 C:\Users\Izzy Kamayangi\Desktop\Project\Election-App\ElectionApp\obj\Debug\ElectionApp.dll
 C:\Users\Izzy Kamayangi\Desktop\Project\Election-App\ElectionApp\obj\Debug\ElectionApp.pdb
 >>>>>>> b0dedb79a1b92b191ef34d2eed16bbc7b80ac6fc
+C:\Users\Izzy Kamayangi\Documents\ELECTION-APP\Election-App\ElectionApp\obj\Debug\ElectionApp.csprojResolveAssemblyReference.cache
+C:\Users\Izzy Kamayangi\Documents\ELECTION-APP\Election-App\ElectionApp\obj\Debug\ElectionApp.dll
+C:\Users\Izzy Kamayangi\Documents\ELECTION-APP\Election-App\ElectionApp\obj\Debug\ElectionApp.pdb
