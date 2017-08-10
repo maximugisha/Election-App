@@ -196,7 +196,24 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Candidates.cs" />
+    <Compile Include="Models\Candidates.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Candidates.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Candidates.cs">
+      <DependentUpon>Candidates.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Candidates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Candidates.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Candidates1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Candidates.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -218,7 +235,24 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <EntityDeploy Include="Models\Candidates.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Candidates.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Candidates.edmx.diagram">
+      <DependentUpon>Candidates.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Models\Candidates.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Candidates.edmx</DependentUpon>
+      <LastGenOutput>Candidates.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Candidates.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Candidates.edmx</DependentUpon>
+      <LastGenOutput>Candidates1.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
