@@ -13,10 +13,10 @@ namespace ElectionApp.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class election_dbEntities1 : DbContext
+    public partial class election_dbEntities : DbContext
     {
-        public election_dbEntities1()
-            : base("name=election_dbEntities1")
+        public election_dbEntities()
+            : base("name=election_dbEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace ElectionApp.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<candidates> candidates { get; set; }
+        public virtual DbSet<candidate> candidates { get; set; }
     }
 }

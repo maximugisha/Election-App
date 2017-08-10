@@ -5,14 +5,14 @@ namespace ElectionApp.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ElectionApp.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ElectionApp.Models.election_dbEntities>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ElectionApp.Models.ApplicationDbContext context)
+        protected override void Seed(ElectionApp.Models.election_dbEntities context)
         {
             //  This method will be called after migrating to the latest version.
 

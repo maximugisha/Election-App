@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="election_dbModelStoreContainer" CdmEntityContainer="election_dbEntities">
     <EntitySetMapping Name="candidates">
-      <EntityTypeMapping TypeName="election_dbModel.candidates">
+      <EntityTypeMapping TypeName="election_dbModel.candidate">
         <MappingFragment StoreEntitySet="candidates">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="image" ColumnName="image" />

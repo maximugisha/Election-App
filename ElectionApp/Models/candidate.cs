@@ -12,7 +12,7 @@ namespace ElectionApp.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class candidates
+    public partial class candidate
     {
         public int id { get; set; }
         public byte[] image { get; set; }
