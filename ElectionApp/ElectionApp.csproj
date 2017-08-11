@@ -273,8 +273,8 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Election\ballotpage.cshtml" />
-    <Content Include="Views\Election\tallypage.cshtml" />
+    <Content Include="Views\Election\Ballotpage.cshtml" />
+    <Content Include="Views\Election\Tallypage.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
