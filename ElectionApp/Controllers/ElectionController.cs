@@ -6,12 +6,23 @@ using System.Web;
 using System.Web.Mvc;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using ElectionApp.Models;
+
+
 
 namespace ElectionApp.Controllers
 {
     public class ElectionController : Controller
     {
+        private ApplicationDbContext _dbContext;
+        public ElectionController()
+        {
+            _dbContext = new ApplicationDbContext();
+        }
+      
+
         // GET: Election
+
         public ActionResult Index()
         {
             return View();
@@ -19,8 +30,9 @@ namespace ElectionApp.Controllers
         public ActionResult ballotpage()
         {
             ViewBag.Message = "Cast Your Vote Here.";
-           
-            return View();
+            var candidates = _dbContext.Candidates.ToArray();
+            return View(candidates);
+      
         }
         public ActionResult tallypage()
         {

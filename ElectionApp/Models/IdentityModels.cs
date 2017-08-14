@@ -24,7 +24,7 @@ namespace ElectionApp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        
+        public DbSet<Candidate> Candidates { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

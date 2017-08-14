@@ -63,3 +63,5 @@ C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\bin
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.csprojResolveAssemblyReference.cache
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.dll
 C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.pdb
+C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.Migrations.CandidatesTable.resources
+C:\Users\maxim\Documents\Visual Studio 2013\Projects\ElectionApp\ElectionApp\obj\Debug\ElectionApp.csproj.GenerateResource.Cache
