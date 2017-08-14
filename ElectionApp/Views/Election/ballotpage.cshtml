@@ -21,43 +21,44 @@
         <span class="glyphicon glyphicon-arrow-right"></span> President
     </h3>
 </div>
+
 @foreach (var candidate in Model)
 {
     if (@candidate.Post == "President")
     {
         <li class="list-group-item">
             <div class="radio">
-                <input value="1" type="radio" name="optionsRadios" />
+                
                 <label>
-                    @candidate.Name 
+                    @candidate.Name <br />
+                    <input value="1" type="radio" name="President" />
+                    
                 </label>
              </div>
         </li>
     }
  }
+<button type="button" class="btn btn-primary btn-xs" >Vote</button>
 
 <div class="panel-heading">
     <h3 class="panel-title">
         <span class="glyphicon glyphicon-arrow-right"></span> Vice President
     </h3>
 </div>
+
 @foreach (var candidate in Model)
 {
     if (@candidate.Post == "Vice President")
     {
         <li class="list-group-item">
             <div class="radio">
-                <input value="1" type="radio" name="optionsRadios" />
+                
                 <label>
-                    @candidate.Name
+                    @candidate.Name <br />
+                   <br /> <input value="1" type="radio" name = "Vice President" />
                 </label>
              </div>
         </li>
     }
 }
-
-    <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-    </ul>
-
+<button type="button" class="btn btn-primary btn-xs">Vote</button>

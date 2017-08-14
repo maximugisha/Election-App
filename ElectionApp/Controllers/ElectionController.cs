@@ -7,6 +7,8 @@ using System.Web.Mvc;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using ElectionApp.Models;
+using System.Data.SqlClient;
+using System.Web.Configuration;
 
 
 
@@ -19,7 +21,7 @@ namespace ElectionApp.Controllers
         {
             _dbContext = new ApplicationDbContext();
         }
-      
+
 
         // GET: Election
 
@@ -32,8 +34,9 @@ namespace ElectionApp.Controllers
             ViewBag.Message = "Cast Your Vote Here.";
             var candidates = _dbContext.Candidates.ToArray();
             return View(candidates);
-      
         }
+
+
         public ActionResult tallypage()
         {
             ViewBag.Message = "Current Contestant Standings.";
@@ -42,3 +45,4 @@ namespace ElectionApp.Controllers
         }
     }
 }
+        
