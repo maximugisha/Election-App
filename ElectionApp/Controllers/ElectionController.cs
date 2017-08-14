@@ -37,8 +37,8 @@ namespace ElectionApp.Controllers
         public ActionResult tallypage()
         {
             ViewBag.Message = "Current Contestant Standings.";
-
-            return View();
+            var candidates = _dbContext.Candidates.ToArray();
+            return View(candidates);
         }
     }
 }
