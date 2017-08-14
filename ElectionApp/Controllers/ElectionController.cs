@@ -9,6 +9,8 @@ using MySql.Data.MySqlClient;
 using ElectionApp.Models;
 using System.Data.SqlClient;
 using System.Web.Configuration;
+using System.Web.UI.WebControls;
+using System.Web.UI;
 
 
 
@@ -35,8 +37,10 @@ namespace ElectionApp.Controllers
             var candidates = _dbContext.Candidates.ToArray();
             return View(candidates);
         }
-
-
+            public class RadioButton : CheckBox, IPostBackDataHandler{
+                RadioButton();
+            }
+            
         public ActionResult tallypage()
         {
             ViewBag.Message = "Current Contestant Standings.";

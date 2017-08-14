@@ -4,11 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <h2>Current Votes By Each Candidate</h2>
 
 
 
     @foreach (var candidate in Model)
     {
-        <table>@candidate.Name @candidate.Post (@candidate.Votes)</table>
+        <b>@candidate.Name &nbsp; @candidate.Post  &nbsp; (@candidate.Votes)</b> <br />
     }
+

@@ -4,6 +4,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<script language="C#" type="text/javascript">
+
+</script>
+
     <h2 class="h1">Your Vote, Your Voice</h2>
 
 
@@ -17,9 +21,9 @@
         </div>
      </div>
 <div class="panel-heading">
-    <h3 class="panel-title">
-        <span class="glyphicon glyphicon-arrow-right"></span> President
-    </h3>
+    <h2 class="btn-primary">
+        <span ></span> President
+    </h2>
 </div>
 
 @foreach (var candidate in Model)
@@ -27,38 +31,30 @@
     if (@candidate.Post == "President")
     {
         <li class="list-group-item">
-            <div class="radio">
-                
-                <label>
-                    @candidate.Name <br />
-                    <input value="1" type="radio" name="President" />
-                    
-                </label>
-             </div>
+                    @Html.Label(candidate.Name) &nbsp; &nbsp;&nbsp;&nbsp; @Html.RadioButton("PresRb", 1, new { id = "1" })
         </li>
     }
  }
-<button type="button" class="btn btn-primary btn-xs" >Vote</button>
+
 
 <div class="panel-heading">
-    <h3 class="panel-title">
-        <span class="glyphicon glyphicon-arrow-right"></span> Vice President
-    </h3>
+    <h2  class="btn-primary">
+        <span ></span> Vice President
+    </h2>
 </div>
 
 @foreach (var candidate in Model)
 {
     if (@candidate.Post == "Vice President")
     {
-        <li class="list-group-item">
-            <div class="radio">
-                
-                <label>
-                    @candidate.Name <br />
-                   <br /> <input value="1" type="radio" name = "Vice President" />
-                </label>
-             </div>
+        <li class="list-group-item"> 
+               @Html.Label(candidate.Name) &nbsp; &nbsp;&nbsp;&nbsp; @Html.RadioButton("ViceRb", 1, new { id = "2"})
         </li>
     }
 }
-<button type="button" class="btn btn-primary btn-xs">Vote</button>
+<br />
+<br />
+<div class="col-sm-offset-4">
+  <button class="btn-primary" onclick="location.href='@Url.Action("tallypage", "Election")'">Vote </button>
+</div>
+
