@@ -14,6 +14,10 @@
 
     var bbt;
     var optionsTotal = [0, 0, 0, 0];
+    $.get("test.aspx?checkForLogin=1", "", function (result) {
+        alert(result);
+        // if true, perform member specific operation otherwise show appropriate message
+    });
     $(document).ready(function () {
         bbt = new BBT('173a497949aafc1c73946178a1eb1a06', { ws_host: 'beebotte.com', auth_endpoint: '/api/authentications/bbt' });
         bbt.subscribe({ channel: 'ElectionApp', resource: 'President', read: true, write: true }, function (message) {
@@ -125,7 +129,7 @@
                         <div class="radio">
                             <label>
                                 <input value="4" type="radio" name="optionsRadios" />
-                                Kalamaji John
+                                Karamagi John
                             </label> (<span id="option4Perc">0</span>)
                         </div>
                         <div class="progress">

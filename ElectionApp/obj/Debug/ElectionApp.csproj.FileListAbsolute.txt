@@ -132,3 +132,15 @@ C:\Users\hp pc\Election-App\ElectionApp\bin\Microsoft.Owin.Security.MicrosoftAcc
 C:\Users\hp pc\Election-App\ElectionApp\obj\Debug\ElectionApp.csprojResolveAssemblyReference.cache
 C:\Users\hp pc\Election-App\ElectionApp\obj\Debug\ElectionApp.dll
 C:\Users\hp pc\Election-App\ElectionApp\obj\Debug\ElectionApp.pdb
+C:\Users\hp pc\Election-App\ElectionApp\bin\Chart.Mvc.dll
+C:\Users\hp pc\Election-App\ElectionApp\bin\System.Web.DataVisualization.Design.dll
+C:\Users\hp pc\Election-App\ElectionApp\bin\System.Web.DataVisualization.dll
+C:\Users\hp pc\Election-App\ElectionApp\bin\System.Windows.Forms.DataVisualization.Design.dll
+C:\Users\hp pc\Election-App\ElectionApp\bin\System.Windows.Forms.DataVisualization.dll
+C:\Users\hp pc\Election-App\ElectionApp\bin\Chart.Mvc.pdb
+C:\Users\hp pc\Election-App\ElectionApp\bin\Chart.Mvc.xml
+C:\Users\hp pc\Election-App\ElectionApp\obj\Debug\ElectionApp.Migrations.InitialCreate.resources
+C:\Users\hp pc\Election-App\ElectionApp\obj\Debug\ElectionApp.csproj.GenerateResource.Cache
+C:\Users\hp pc\Election-App\ElectionApp\obj\Debug\ElectionApp.Migrations.CandidatesTable.resources
+C:\Users\hp pc\Election-App\ElectionApp\bin\ElectionApp.dll.CodeAnalysisLog.xml
+C:\Users\hp pc\Election-App\ElectionApp\bin\ElectionApp.dll.lastcodeanalysissucceeded

@@ -54,6 +54,21 @@ namespace ElectionApp.Models
     public class RegisterViewModel
     {
         [Required]
+        [StringLength(100)]
+        [Display(Name = "Name")]
+        public string Name { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        [Display(Name = "Student Number")]
+        public string StudentNumber { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        [Display(Name = "Registration Number")]
+        public string RegistrationNumber { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
