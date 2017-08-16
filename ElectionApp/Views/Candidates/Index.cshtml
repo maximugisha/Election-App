@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ElectionApp.Models.Candidate>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Candidates</h2>
+
+<ul>
+    @foreach (var candidate in Model)
+    {
+        <li>@candidate.Name @candidate.Post (@candidate.Votes)</li>
+
+    }
+</ul>

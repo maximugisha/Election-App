@@ -37,9 +37,6 @@ namespace ElectionApp.Controllers
             var candidates = _dbContext.Candidates.ToArray();
             return View(candidates);
         }
-            public class RadioButton : CheckBox, IPostBackDataHandler{
-                RadioButton();
-            }
             
         public ActionResult tallypage()
         {

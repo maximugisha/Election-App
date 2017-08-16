@@ -5,7 +5,29 @@
 }
 
 <script language="C#" type="text/javascript">
-
+    function VotePres() {
+        var objConnection = new ActiveXObject("adodb.connection");
+        var strConn = "Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\Database1.mdf;Initial Catalog=Database1.mdf;Integrated Security=True"; providerName = "System.Data.SqlClient";
+        objConnection.Open(strConn);
+        var rs = new ActiveXObject("ADODB.Recordset");
+        var strQuery = "SELECT vOTES FROM  Candidates";
+        rs.Open(strQuery, objConnection);
+        rs.MoveFirst();
+        var span = document.createElement("span");
+        span.style.color = "Blue";
+        span.innerText = "  Id " + "  Name " + "   Votes";
+        document.body.appendChild(span);
+        while (!rs.EOF) {
+            var span = document.createElement("span");
+            span.style.color = "green";
+            span.innerText = "\n " + rs.fields(0) + " |  " + rs.fields(1) + " |  " + rs.fields(3);
+            document.body.appendChild(span);
+            rs.movenext();
+        }
+        rs.close();
+        connection.close();
+    }
+    function VoteVice(){}
 </script>
 
     <h2 class="h1">Your Vote, Your Voice</h2>
@@ -31,7 +53,7 @@
     if (@candidate.Post == "President")
     {
         <li class="list-group-item">
-                    @Html.Label(candidate.Name) &nbsp; &nbsp;&nbsp;&nbsp; @Html.RadioButton("PresRb", 1, new { id = "1" })
+                    @Html.Label(candidate.Name) &nbsp; &nbsp;&nbsp;&nbsp; <input value="1" type="radio" id="presRb" onclick="VotePres(@candidate.Id);" name="President" />
         </li>
     }
  }
@@ -48,7 +70,7 @@
     if (@candidate.Post == "Vice President")
     {
         <li class="list-group-item"> 
-               @Html.Label(candidate.Name) &nbsp; &nbsp;&nbsp;&nbsp; @Html.RadioButton("ViceRb", 1, new { id = "2"})
+               @Html.Label(candidate.Name) &nbsp; &nbsp;&nbsp;&nbsp; <input value="1" type="radio" id="VPRb" onclick="VoteVice(@candidate.Id)" name="Vice President" />
         </li>
     }
 }
