@@ -14,6 +14,7 @@ using System.Web.UI;
 
 
 
+
 namespace ElectionApp.Controllers
 {
     public class ElectionController : Controller
@@ -34,8 +35,14 @@ namespace ElectionApp.Controllers
         public ActionResult ballotpage()
         {
             ViewBag.Message = "Cast Your Vote Here.";
+<<<<<<< HEAD
             var candidates = _dbContext.Candidates.ToArray();
             return View(candidates);
+=======
+         
+            
+            return View();
+>>>>>>> 2c45ae960af83a191add93b450353c6a0210c12a
         }
             
         public ActionResult tallypage()
