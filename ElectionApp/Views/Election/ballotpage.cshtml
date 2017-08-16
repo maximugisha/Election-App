@@ -3,32 +3,10 @@
     ViewBag.Title = "ballotpage";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<script language="C#" type="text/javascript">
-    function VotePres() {
-        var objConnection = new ActiveXObject("adodb.connection");
-        var strConn = "Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\Database1.mdf;Initial Catalog=Database1.mdf;Integrated Security=True"; providerName = "System.Data.SqlClient";
-        objConnection.Open(strConn);
-        var rs = new ActiveXObject("ADODB.Recordset");
-        var strQuery = "SELECT vOTES FROM  Candidates";
-        rs.Open(strQuery, objConnection);
-        rs.MoveFirst();
-        var span = document.createElement("span");
-        span.style.color = "Blue";
-        span.innerText = "  Id " + "  Name " + "   Votes";
-        document.body.appendChild(span);
-        while (!rs.EOF) {
-            var span = document.createElement("span");
-            span.style.color = "green";
-            span.innerText = "\n " + rs.fields(0) + " |  " + rs.fields(1) + " |  " + rs.fields(3);
-            document.body.appendChild(span);
-            rs.movenext();
-        }
-        rs.close();
-        connection.close();
-    }
-    function VoteVice(){}
-</script>
+<head>
+    <title>MES Elections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
     <h2 class="h1">Your Vote, Your Voice</h2>
 
