@@ -14,14 +14,8 @@
 <div class="row">
     <div class="col-md-8">
         <section id="loginForm">
-            <style>
-                body{
-                    background: grey;
-                }
-                
-            </style>
 
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = " col-md-offset-6 form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
                 <h2>Login To Cast Your Vote.</h2>
@@ -63,11 +57,9 @@
             }
         </section>
     </div>
-    <div class="col-md-5 btn btn-default">
-        @Html.ActionLink("Register as a new user", "Register")
-      </div>
-
-    </div>
+   
+  </div>
+        
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
